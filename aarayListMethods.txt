@@ -1,0 +1,50 @@
+
+package AArayList;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+
+
+public class ArayListt {
+
+	public static void main(String[] args) {
+		List<String> a = new ArrayList<String>();
+		a.add("red ");
+		 a.add("yellow ");
+		 a.add("green");
+		 a.add("black");
+		 System.out.println(a);
+		 
+		 a.add(0, "pink");
+		 a.add(4,"res");
+		 a.get(2);
+		 
+		 for (String e : a)
+		 {
+			 System.out.println(e);
+		 }
+		 
+		String s = a.get(2);
+		System.out.println(s);
+		System.out.println(a);
+		a.set(3,"cyan");
+		
+		
+		System.out.println(a);
+		a.remove(2);
+		System.out.println(a);
+		
+		
+		if (a.contains("red |"))
+		{
+			System.out.println("found it");
+		}
+		
+		Collections.sort(a);
+		System.out.println(a);
+		 
+	}
+
+}
